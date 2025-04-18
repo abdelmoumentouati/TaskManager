@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Task Manager</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    ul { list-style: none; padding: 0; }
+    li { margin: 10px 0; }
+    .completed { text-decoration: line-through; color: gray; }
+    button { margin-left: 10px; }
+  </style>
 </head>
 <body>
-  <h1>My Task Manager</h1>
-  <input type="text" id="taskInput" placeholder="New task...">
-  <button onclick="addTask()">Add</button>
+  <h1>Task Manager</h1>
+  <input type="text" id="taskInput" placeholder="Add a new task" />
+  <button onclick="addTask()">Add Task</button>
   <ul id="taskList"></ul>
+
   <script src="script.js"></script>
 </body>
 </html>
